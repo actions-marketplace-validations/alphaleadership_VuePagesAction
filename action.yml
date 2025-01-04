@@ -40,7 +40,7 @@ runs:
         run: |
               git config --global user.email "${{ inputs.gitemail }}"
               git config --global user.name "${{ inputs.gitname }}"
-              mkdir dist 
+              
               cd dist
               
               git init
