@@ -61,7 +61,7 @@ runs:
               echo test
               git fetch
               echo fetch
-              git pull --rebase
+              git pull --rebase -u 
               echo pull
              
               cd ..
