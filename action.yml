@@ -92,7 +92,7 @@ runs:
               if [ true ==  ${{ inputs.useyarn }} ]; then yarn build; else npm run build; fi
            
               git pull -u
-              git push
+              git push -u 
               cd dist
               ln -s index.html 404.html
               if [ "none" !=  ${{ inputs.cname }} ]; then echo '${{ inputs.cname }}' > CNAME; fi
@@ -111,5 +111,5 @@ runs:
               cd ..
               git add -A
               git commit -m "update"
-              git push
+              git push -u 
         shell: bash
