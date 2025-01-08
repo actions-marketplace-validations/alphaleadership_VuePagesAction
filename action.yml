@@ -52,7 +52,7 @@ runs:
               echo branch
               echo temp >log.txt
               git add *
-              git rebase --continue
+              
               git commit -m temp
               
               git branch --set-upstream-to=origin 
