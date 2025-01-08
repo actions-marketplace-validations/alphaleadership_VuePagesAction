@@ -61,7 +61,7 @@ runs:
               echo test
               git fetch
               echo fetch
-              git pull --rebase -u 
+              git pull -u 
               echo pull
              
               cd ..
@@ -84,14 +84,14 @@ runs:
               echo test
               git fetch
               echo fetch
-              git pull --rebase
+              git pull -u 
               echo pull
              
               cd ..
               if [ true ==  ${{ inputs.useyarn }} ]; then yarn install --frozen-lockfile; else npm i; fi
               if [ true ==  ${{ inputs.useyarn }} ]; then yarn build; else npm run build; fi
            
-              git pull 
+              git pull -u
               git push
               cd dist
               ln -s index.html 404.html
