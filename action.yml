@@ -74,7 +74,7 @@ runs:
               git branch -m main
               echo branch
               echo temp >log.txt
-              git add *  */*
+              git add *  
               git commit -m temp
               
               git branch --set-upstream-to=origin 
