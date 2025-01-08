@@ -46,7 +46,7 @@ runs:
               git init
               
               git remote add origin https://${{ inputs.username }}:${{ inputs.token }}@github.com/${{ inputs.username }}/${{ inputs.reponame }}.git -m pages
-              
+              git fetch
               echo fetch
               git branch -m pages
               echo branch
